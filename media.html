@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media — Pushpendra Singh</title>
+<meta name="description" content="Photos, talks, and moments across the PhD and research career of Pushpendra Singh.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- Navigation (same as landing page) -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">PS</a>
+    <div class="nav-links">
+      <a href="index.html#research">Research</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#writing">Writing</a>
+      <a href="media.html">Media</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Page header -->
+<header class="page-header">
+  <span class="page-eyebrow">§ Media Archive</span>
+  <h1 class="page-title">Moments, <em>talks, and quiet wins</em></h1>
+  <p class="page-intro">
+    A running archive of conferences, lab moments, invited talks, and the occasional photograph from the PhD journey. Updated as the years unfold.
+  </p>
+</header>
+
+<!-- OPTIONAL FILTER BAR — remove this block if you don't want categories
+<div class="media-filter">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="talks">Talks</button>
+  <button class="filter-btn" data-filter="conferences">Conferences</button>
+  <button class="filter-btn" data-filter="lab">Lab life</button>
+  <button class="filter-btn" data-filter="formal">Formal</button>
+</div>
+-->
+
+<!-- =================================================================
+     GALLERY — add entries here over time
+     Structure of each entry:
+
+     <figure class="gallery-item" data-category="conferences">
+       <img src="images/media/filename.jpg" alt="Short alt text">
+       <figcaption>
+         <strong>Short title or occasion</strong>
+         Date · Location · optional one-line context
+       </figcaption>
+     </figure>
+
+     Drop the photo into the images/media/ folder, then paste an entry.
+     Masonry layout will handle irregular heights automatically.
+     ================================================================= -->
+
+<div class="gallery">
+
+  <!-- EMPTY STATE — remove this <div> once you add real entries -->
+  <div class="gallery-empty">
+    <p>
+      The archive starts empty and grows with time. The first entries will land here after conferences, supervisor meetings worth remembering, and the kind of quiet moments that turn out to matter later.
+    </p>
+  </div>
+
+  <!-- EXAMPLES (commented out) — uncomment, duplicate, and fill in when you have photos
+
+  <figure class="gallery-item" data-category="conferences">
+    <img src="images/media/miccai-2026.jpg" alt="Presenting at MICCAI 2026">
+    <figcaption>
+      <strong>MICCAI 2026 — Spatial FiLM poster</strong>
+      October 2026 · Daejeon, South Korea
+    </figcaption>
+  </figure>
+
+  <figure class="gallery-item" data-category="formal">
+    <img src="images/media/hinduja-dinner.jpg" alt="Dinner with Hinduja family at KCL">
+    <figcaption>
+      <strong>Hinduja Foundation dinner at KCL</strong>
+      March 2026 · London
+    </figcaption>
+  </figure>
+
+  <figure class="gallery-item" data-category="lab">
+    <img src="images/media/lab-coffee.jpg" alt="Lab coffee break">
+    <figcaption>
+      <strong>Coffee break with the CDT cohort</strong>
+      February 2026 · St Thomas' Hospital
+    </figcaption>
+  </figure>
+
+  -->
+
+</div>
+
+<!-- =================================================================
+     VIDEOS — for YouTube talks, demos, short clips.
+
+     For a YouTube video, get the video ID from the URL
+       (e.g. youtube.com/watch?v=ABC123 → ID is ABC123)
+     and paste it into the iframe src below.
+
+     For a self-hosted short clip (small file, <10 MB) replace the
+     iframe with a <video> element pointing to a file in images/videos/.
+     ================================================================= -->
+
+<section class="video-section" id="videos">
+  <div class="section-header">
+    <span class="section-num">§ VIDEO</span>
+    <h2 class="section-title">Talks &amp; Demos</h2>
+  </div>
+
+  <div class="video-grid">
+
+    <!-- EMPTY STATE — remove once you have videos -->
+    <div class="featured-empty" style="grid-column: 1/-1;">
+      <p>
+        Invited talks, research demos, and conference recordings will live here as they accumulate. Check back after MICCAI and other 2026 events.
+      </p>
+    </div>
+
+    <!-- EXAMPLE VIDEO ENTRIES (commented out)
+
+    <div class="video-item">
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="Talk title"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="video-meta">
+        <span class="video-title">Spatial FiLM — MICCAI 2026 oral presentation</span>
+        <span class="video-caption">October 2026 · 15 min</span>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <div class="video-embed">
+        <video controls preload="metadata" poster="images/media/demo-poster.jpg">
+          <source src="images/videos/neurodiag-demo.mp4" type="video/mp4">
+          Your browser does not support embedded video.
+        </video>
+      </div>
+      <div class="video-meta">
+        <span class="video-title">neurodiag viewer walkthrough</span>
+        <span class="video-caption">2 min demo</span>
+      </div>
+    </div>
+
+    -->
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>Pushpendra Singh — 2026</span>
+    <span class="footer-meta">Designed and built in London</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- Optional filter script — only active if you uncomment the filter bar above
+<script>
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.gallery-item');
+  filterBtns.forEach(btn => btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    items.forEach(item => {
+      item.style.display = (f === 'all' || item.dataset.category === f) ? '' : 'none';
+    });
+  }));
+</script>
+-->
+
+</body>
+</html>
