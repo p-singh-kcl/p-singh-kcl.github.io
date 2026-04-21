@@ -1,3 +1,4 @@
+<img width="958" height="524" alt="Recording 2026-03-10 013439" src="https://github.com/user-attachments/assets/036c9b82-48c8-475d-bae6-1f52b969706a" />
 # Drop project images here
 
 This folder holds per-project figures used on the landing page work cards.
