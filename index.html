@@ -62,59 +62,7 @@
 
     <!-- Decorative MRI slice visual -->
     <div class="hero-visual reveal" style="--d:.2s" aria-hidden="true">
-      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient id="brainGrad" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#e8dcc4" stop-opacity="0.15"/>
-            <stop offset="60%" stop-color="#d4a574" stop-opacity="0.08"/>
-            <stop offset="100%" stop-color="#1a1612" stop-opacity="0"/>
-          </radialGradient>
-          <filter id="noise">
-            <feTurbulence baseFrequency="0.9" numOctaves="2"/>
-            <feColorMatrix values="0 0 0 0 0.9  0 0 0 0 0.85  0 0 0 0 0.75  0 0 0 0.05 0"/>
-          </filter>
-        </defs>
-
-        <!-- Outer axial slice outline -->
-        <ellipse cx="200" cy="200" rx="160" ry="180" fill="url(#brainGrad)" stroke="#8b6f3e" stroke-width="0.5" stroke-opacity="0.3"/>
-
-        <!-- Inner cortical ribbon -->
-        <ellipse cx="200" cy="200" rx="148" ry="166" fill="none" stroke="#c9a876" stroke-width="0.4" stroke-opacity="0.4"/>
-
-        <!-- Central structures -->
-        <path d="M 170 180 Q 200 160 230 180 Q 240 200 230 220 Q 200 240 170 220 Q 160 200 170 180 Z"
-              fill="none" stroke="#d4a574" stroke-width="0.5" stroke-opacity="0.5"/>
-
-        <!-- Ventricles -->
-        <path d="M 180 190 Q 190 185 200 190 Q 210 185 220 190 L 215 210 Q 200 215 185 210 Z"
-              fill="#1a1612" stroke="#8b6f3e" stroke-width="0.3" stroke-opacity="0.4"/>
-
-        <!-- Sulci marks -->
-        <g stroke="#c9a876" stroke-width="0.3" stroke-opacity="0.35" fill="none">
-          <path d="M 80 140 Q 110 130 130 150"/>
-          <path d="M 270 150 Q 290 130 320 140"/>
-          <path d="M 100 260 Q 140 280 170 270"/>
-          <path d="M 230 270 Q 260 280 300 260"/>
-          <path d="M 150 100 Q 200 90 250 100"/>
-          <path d="M 150 300 Q 200 310 250 300"/>
-        </g>
-
-        <!-- Grid crosshairs -->
-        <line x1="200" y1="20" x2="200" y2="380" stroke="#c9a876" stroke-width="0.2" stroke-opacity="0.2" stroke-dasharray="2,4"/>
-        <line x1="20" y1="200" x2="380" y2="200" stroke="#c9a876" stroke-width="0.2" stroke-opacity="0.2" stroke-dasharray="2,4"/>
-
-        <!-- Orientation labels -->
-        <text x="200" y="12" text-anchor="middle" fill="#8b6f3e" font-size="7" font-family="JetBrains Mono">A</text>
-        <text x="200" y="396" text-anchor="middle" fill="#8b6f3e" font-size="7" font-family="JetBrains Mono">P</text>
-        <text x="8" y="203" text-anchor="start" fill="#8b6f3e" font-size="7" font-family="JetBrains Mono">R</text>
-        <text x="390" y="203" text-anchor="end" fill="#8b6f3e" font-size="7" font-family="JetBrains Mono">L</text>
-
-        <!-- Corner annotations -->
-        <text x="12" y="20" fill="#8b6f3e" font-size="6" font-family="JetBrains Mono" opacity="0.6">T1 / T1c</text>
-        <text x="388" y="20" text-anchor="end" fill="#8b6f3e" font-size="6" font-family="JetBrains Mono" opacity="0.6">SLICE 128</text>
-        <text x="12" y="392" fill="#8b6f3e" font-size="6" font-family="JetBrains Mono" opacity="0.6">1.0 × 1.0 × 1.0 mm</text>
-        <text x="388" y="392" text-anchor="end" fill="#8b6f3e" font-size="6" font-family="JetBrains Mono" opacity="0.6">FOV 256</text>
-      </svg>
+      <img src="images/projects/your-file.gif" alt="Brain MRI visualisation">
     </div>
   </div>
 </header>
