@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pushpendra Singh — Medical AI Researcher</title>
+<meta name="description" content="PhD researcher at King's College London developing spatially-varying domain adaptation methods for contrast-enhanced brain MRI.">
+<meta property="og:title" content="Pushpendra Singh — Medical AI Researcher">
+<meta property="og:description" content="PhD researcher at King's College London developing spatially-varying domain adaptation methods for contrast-enhanced brain MRI.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Subtle grain overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- Top navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">PS</a>
+    <div class="nav-links">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#writing">Writing</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="hero-grid">
+    <div class="hero-meta">
+      <span class="meta-label">Issue 01</span>
+      <span class="meta-date">2026 —</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="reveal" style="--d:0s">Pushpendra</span>
+      <span class="reveal" style="--d:.08s">Singh</span>
+    </h1>
+
+    <p class="hero-sub reveal" style="--d:.3s">
+      PhD researcher at <span class="hl">King's College London</span> developing
+      <em>spatially-varying domain adaptation</em> methods that make medical imaging AI
+      robust to contrast-agent-induced distribution shifts.
+    </p>
+
+    <div class="hero-tags reveal" style="--d:.5s">
+      <span class="tag">Medical Imaging</span>
+      <span class="tag">Domain Adaptation</span>
+      <span class="tag">Deep Learning</span>
+      <span class="tag">Brain MRI</span>
+    </div>
+
+    <!-- Decorative MRI slice visual -->
+    <div class="hero-visual reveal" style="--d:.2s" aria-hidden="true">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="brainGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#e8dcc4" stop-opacity="0.15"/>
+            <stop offset="60%" stop-color="#d4a574" stop-opacity="0.08"/>
+            <stop offset="100%" stop-color="#1a1612" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="noise">
+            <feTurbulence baseFrequency="0.9" numOctaves="2"/>
+            <feColorMatrix values="0 0 0 0 0.9  0 0 0 0 0.85  0 0 0 0 0.75  0 0 0 0.05 0"/>
+          </filter>
+        </defs>
+
+        <!-- Outer axial slice outline -->
+        <ellipse cx="200" cy="200" rx="160" ry="180" fill="url(#brainGrad)" stroke="#8b6f3e" stroke-width="0.5" stroke-opacity="0.3"/>
+
+        <!-- Inner cortical ribbon -->
+        <ellipse cx="200" cy="200" rx="148" ry="166" fill="none" stroke="#c9a876" stroke-width="0.4" stroke-opacity="0.4"/>
+
+        <!-- Central structures -->
+        <path d="M 170 180 Q 200 160 230 180 Q 240 200 230 220 Q 200 240 170 220 Q 160 200 170 180 Z"
+              fill="none" stroke="#d4a574" stroke-width="0.5" stroke-opacity="0.5"/>
+
+        <!-- Ventricles -->
+        <path d="M 180 190 Q 190 185 200 190 Q 210 185 220 190 L 215 210 Q 200 215 185 210 Z"
+              fill="#1a1612" stroke="#8b6f3e" stroke-width="0.3" stroke-opacity="0.4"/>
+
+        <!-- Sulci marks -->
+        <g stroke="#c9a876" stroke-width="0.3" stroke-opacity="0.35" fill="none">
+          <path d="M 80 140 Q 110 130 130 150"/>
+          <path d="M 270 150 Q 290 130 320 140"/>
+          <path d="M 100 260 Q 140 280 170 270"/>
+          <path d="M 230 270 Q 260 280 300 260"/>
+          <path d="M 150 100 Q 200 90 250 100"/>
+          <path d="M 150 300 Q 200 310 250 300"/>
+        </g>
+
+        <!-- Grid crosshairs -->
+        <line x1="200" y1="20" x2="200" y2="380" stroke="#c9a876" stroke-width="0.2" stroke-opacity="0.2" stroke-dasharray="2,4"/>
+        <line x1="20" y1="200" x2="380" y2="200" stroke="#c9a876" stroke-width="0.2" stroke-opacity="0.2" stroke-dasharray="2,4"/>
+
+        <!-- Orientation labels -->
+        <text x="200" y="12" text-anchor="middle" fill="#8b6f3e" font-size="7" font-family="JetBrains Mono">A</text>
+        <text x="200" y="396" text-anchor="middle" fill="#8b6f3e" font-size="7" font-family="JetBrains Mono">P</text>
+        <text x="8" y="203" text-anchor="start" fill="#8b6f3e" font-size="7" font-family="JetBrains Mono">R</text>
+        <text x="390" y="203" text-anchor="end" fill="#8b6f3e" font-size="7" font-family="JetBrains Mono">L</text>
+
+        <!-- Corner annotations -->
+        <text x="12" y="20" fill="#8b6f3e" font-size="6" font-family="JetBrains Mono" opacity="0.6">T1 / T1c</text>
+        <text x="388" y="20" text-anchor="end" fill="#8b6f3e" font-size="6" font-family="JetBrains Mono" opacity="0.6">SLICE 128</text>
+        <text x="12" y="392" fill="#8b6f3e" font-size="6" font-family="JetBrains Mono" opacity="0.6">1.0 × 1.0 × 1.0 mm</text>
+        <text x="388" y="392" text-anchor="end" fill="#8b6f3e" font-size="6" font-family="JetBrains Mono" opacity="0.6">FOV 256</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- Research narrative -->
+<section class="section" id="research">
+  <div class="section-header">
+    <span class="section-num">§ 01</span>
+    <h2 class="section-title">The Problem I Work On</h2>
+  </div>
+
+  <div class="narrative">
+    <p class="drop-cap">
+      <span class="initial">G</span>adolinium is a rare-earth metal injected into patients to enhance contrast in brain MRI. It lights up vessels, enhancing tumours, and meninges — the very structures clinicians most need to see. But the same agent that makes MRI useful for diagnosis also breaks most AI segmentation models trained on pre-contrast scans.
+    </p>
+
+    <p>
+      The shift isn't uniform. It's spatially heterogeneous: some regions change dramatically, others barely at all. Standard domain adaptation methods — the ones designed for scanner-to-scanner variability — treat this as a global shift and fail on exactly the structures that matter most.
+    </p>
+
+    <p>
+      My research develops methods that model this spatial heterogeneity directly. <em>Spatial FiLM</em>, a spatially-varying extension of feature-wise linear modulation, learns location-dependent transformations rather than assuming the shift applies uniformly to all pixels. Combined with contrastive representation learning on paired T1w / T1c scans, the approach produces segmentation models that work reliably across both contrasts.
+    </p>
+
+    <p class="pullquote">
+      Tools like FreeSurfer and SynthSeg work beautifully on clean T1w. Most real clinical studies involve contrast. A model that breaks on post-contrast is a model that cannot be deployed.
+    </p>
+
+    <p>
+      The same methodological frame applies beyond brain imaging — cardiac late gadolinium enhancement (LGE), iodine contrast in CT, and any setting where a contrast agent creates anatomically structured distribution shifts. The long-term goal is infrastructure that actually reaches clinical practice.
+    </p>
+  </div>
+</section>
+
+<!-- Current work grid -->
+<section class="section" id="current">
+  <div class="section-header">
+    <span class="section-num">§ 02</span>
+    <h2 class="section-title">Current Work</h2>
+  </div>
+
+  <div class="work-grid">
+    <article class="work-card">
+      <span class="card-tag">Method</span>
+      <h3>Spatial FiLM</h3>
+      <p>A rank-<em>K</em> factorised modulation scheme that lets segmentation networks apply location-dependent affine transformations to feature maps. Targets spatially heterogeneous contrast shifts that standard FiLM cannot capture.</p>
+      <span class="card-status">In preparation</span>
+    </article>
+
+    <article class="work-card">
+      <span class="card-tag">Method</span>
+      <h3>VICReg Alignment for Paired MRI</h3>
+      <p>Shared-weight encoder-decoder trained jointly on T1w and T1c with VICReg projection heads at three encoder levels. Reduces the cross-contrast segmentation gap relative to standard mixed-contrast training.</p>
+      <span class="card-status">Ongoing</span>
+    </article>
+
+    <article class="work-card">
+      <span class="card-tag">Infrastructure</span>
+      <h3>neurodiag</h3>
+      <p>Six-level diagnostic framework for evaluating cross-contrast invariance — performance stratification, error morphology, representation similarity (CKA), uncertainty, calibration, and attribution.</p>
+      <span class="card-status">Python package</span>
+    </article>
+
+    <article class="work-card">
+      <span class="card-tag">Application</span>
+      <h3>Cardiac MRI Domain Adaptation</h3>
+      <p>Extending the same methodological approach to cardiac imaging — bSSFP to LGE alignment — with research interns at IIT Jodhpur. Contrast-agent-induced shifts are a shared problem across imaging modalities.</p>
+      <span class="card-status">Supervised work</span>
+    </article>
+  </div>
+</section>
+
+<!-- Publications -->
+<section class="section" id="publications">
+  <div class="section-header">
+    <span class="section-num">§ 03</span>
+    <h2 class="section-title">Publications</h2>
+  </div>
+
+  <div class="pub-list">
+    <div class="pub-empty">
+      <p>
+        First manuscripts in preparation for submission through 2026. This page will update as preprints become available.
+      </p>
+      <p class="pub-meta">
+        In the meantime, see ongoing work above or reach out directly for details.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- About / bio -->
+<section class="section" id="about">
+  <div class="section-header">
+    <span class="section-num">§ 04</span>
+    <h2 class="section-title">Background</h2>
+  </div>
+
+  <div class="bio-grid">
+    <div class="bio-text">
+      <p>
+        I'm a first-year PhD researcher at the School of Biomedical Engineering and Imaging Sciences, King's College London, supervised by Dr Rachel Sparks and Prof Tom Vercauteren. My studentship is part of the EPSRC Centre for Doctoral Training in Smart Medical Imaging and is funded by the Hinduja Foundation.
+      </p>
+      <p>
+        Before KCL, I completed a Master's in Data Science at the University of Sheffield and an undergraduate degree in Electronics and Communications Engineering. I've been working on medical imaging problems since 2021.
+      </p>
+      <p>
+        Outside research, I also supervise two undergraduate researchers at IIT Jodhpur on cardiac MRI domain adaptation projects, through an external research supervision role established in early 2026.
+      </p>
+    </div>
+
+    <aside class="bio-side">
+      <div class="side-block">
+        <span class="side-label">Institution</span>
+        <span class="side-value">King's College London</span>
+      </div>
+      <div class="side-block">
+        <span class="side-label">Programme</span>
+        <span class="side-value">EPSRC CDT, Smart Medical Imaging</span>
+      </div>
+      <div class="side-block">
+        <span class="side-label">Supervisors</span>
+        <span class="side-value">Dr Rachel Sparks<br>Prof Tom Vercauteren</span>
+      </div>
+      <div class="side-block">
+        <span class="side-label">Funded by</span>
+        <span class="side-value">Hinduja Foundation</span>
+      </div>
+      <div class="side-block">
+        <span class="side-label">Based in</span>
+        <span class="side-value">London, UK</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- Writing placeholder -->
+<section class="section" id="writing">
+  <div class="section-header">
+    <span class="section-num">§ 05</span>
+    <h2 class="section-title">Writing</h2>
+  </div>
+
+  <div class="writing-empty">
+    <p>
+      Essays and technical notes will appear here — on domain adaptation, medical imaging methodology, and the translation of research ideas into clinical infrastructure.
+    </p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section contact-section" id="contact">
+  <div class="section-header">
+    <span class="section-num">§ 06</span>
+    <h2 class="section-title">Contact</h2>
+  </div>
+
+  <div class="contact-grid">
+    <p class="contact-intro">
+      Open to conversations with clinicians working on contrast-enhanced imaging, researchers in domain adaptation and medical AI, and anyone thinking about how AI actually gets deployed in clinical workflows.
+    </p>
+
+    <div class="contact-links">
+      <a href="mailto:pushpendra.singh@kcl.ac.uk" class="contact-link">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">pushpendra.singh@kcl.ac.uk</span>
+      </a>
+      <a href="https://linkedin.com/in/pushpendrasingh" class="contact-link" target="_blank" rel="noopener">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">/in/pushpendrasingh</span>
+      </a>
+      <a href="https://github.com/pushpendrasingh" class="contact-link" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">@pushpendrasingh</span>
+      </a>
+      <a href="https://scholar.google.com/" class="contact-link" target="_blank" rel="noopener">
+        <span class="contact-label">Scholar</span>
+        <span class="contact-value">Google Scholar</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>Pushpendra Singh — 2026</span>
+    <span class="footer-meta">Designed and built in London</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
